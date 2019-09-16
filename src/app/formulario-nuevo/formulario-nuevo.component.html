@@ -1,0 +1,13 @@
+Formulario Nuevo
+<form>
+    <p>
+        <input type="text" name="marca" [(ngModel)]="nuevoOrdenador.marca" />
+    </p>
+    <p>
+        <input type="text" name="modelo" [(ngModel)]="nuevoOrdenador.modelo" />
+    </p>
+    <p>
+        <input type="text" name="precio" [(ngModel)]="nuevoOrdenador.precio" />
+    </p>
+    <input type="button" value="nuevo" (click)="insertar()"/>
+</form>

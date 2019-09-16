@@ -1,0 +1,17 @@
+<form>
+<input type="text" [(ngModel)]="filtroModelo" name="filtroModelo" (keyup)="filtrar($event)"/>
+<input type="button" value="aceptar" />
+</form>
+
+<table>
+    <tr *ngFor="let ordenador of listaOrdenador">
+        <td>{{ordenador.marca | uppercase}}</td>
+        <td>{{ordenador.modelo}}</td>
+        <td><input type="button" value="borrar" (click)="borrar(ordenador)"></td>
+        <td><input type="button" value="editar" (click)="editar(ordenador)"></td>
+        <td><input type="button" value="detalle" (click)="detalle(ordenador)"></td>
+    </tr>
+</table>
+<a [routerLink]="['/formularioNuevo']">Nuevo</a>
+
+

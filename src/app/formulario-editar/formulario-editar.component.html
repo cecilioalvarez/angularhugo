@@ -1,0 +1,14 @@
+Formulario Editar
+<form>
+    <p>
+        <input type="text" name="marca" [(ngModel)]="ordenadorEditar.marca" />
+    </p>
+    <p>
+        <input type="text" name="modelo" [(ngModel)]="ordenadorEditar.modelo" />
+    </p>
+    <p>
+        <input type="text" name="precio" [(ngModel)]="ordenadorEditar.precio" />
+    </p>
+    <input type="button" value="nuevo" (click)="salvar()"/>
+</form>
+
